@@ -52,3 +52,65 @@ body {
 
 }
 
+.main-screen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.search-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.search-filter .search {
+  width: 68%;
+  /* background-color: red; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-filter .search input{
+  width: 100%;
+  border: none;
+}
+
+.search-filter .search input::placeholder {
+ font-size: 12px;
+ border: none;
+}
+
+.search-filter .search input::content {
+  font-size: 12px;
+  border: none;
+}
+
+.search-filter .filter-button {
+  width: 29%;
+  /* background-color: red; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #1E40AF;
+}
+
+.search-filter .filter-button span{
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-left: 5px;
+}
