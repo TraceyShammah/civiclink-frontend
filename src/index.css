@@ -223,14 +223,18 @@ section.info-box {
 
 .box-text h3{
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 18px;
+  color: #1A1A1A;
+  font-weight: 100;
 }
 
 
 .box-text p  {
   margin: 0;
   font-size: 15px;
+  color: #1A1A1A;
+  font-weight: 100;
 }
 
 .box a {
@@ -243,3 +247,62 @@ section.info-box {
   color: #1E40AF;
   font-size: 14px;
 }
+
+.contact-issue {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  border-radius: 12px;
+  margin: 15px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-issue select,
+.find-rep {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#issue-category , #location, .find-rep {
+  border-radius: 8px;
+}
+
+.issue-category, .location {
+  appearance: none;         /* Remove native arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><path fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='M36 18L24 30L12 18'/></svg>") no-repeat right 1rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem; 
+}
+
+.issue-category.selected, 
+.location.selected {
+  border: 1px solid #1E40AF; /* regular options */
+}
+
+.issue-category:invalid {
+  color: red; /* placeholder style */
+}
+
+.find-rep {
+  background: #B3B3B3;
+  color: white;
+  margin-top: 10px;
+}
+
+.find-rep.active {
+  background-color: #1E40AF;
+  color: white;
+  cursor: pointer;
+}
+
